@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhara N - Portfolio</title>
+<style>
+/* Reset */
+* {margin:0; padding:0; box-sizing:border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+body {background: #f4f7f8; color: #333;}
+a {text-decoration: none;}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1E90FF, #00BFFF);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+header h1 {font-size:3em; animation: fadeIn 1s ease-in-out;}
+header p {margin-top:10px; font-size:1.2em; animation: fadeIn 2s ease-in-out;}
+header .btn {
+    display:inline-block;
+    margin:15px 10px 0;
+    padding:10px 20px;
+    border-radius:5px;
+    background:#fff;
+    color:#1E90FF;
+    font-weight:bold;
+    transition: 0.3s;
+}
+header .btn:hover {background:#00BFFF; color:white; transform: translateY(-3px);}
+
+/* Sections */
+section {padding:60px 20px; max-width:1000px; margin:auto;}
+h2 {color:#1E90FF; margin-bottom:20px; text-align:center;}
+
+/* About */
+#about p {font-size:1.1em; text-align:center; line-height:1.6;}
+
+/* Education */
+#education {padding:40px 20px; max-width:800px; margin:auto; text-align:center;}
+#education p {font-size:1.1em; line-height:1.6;}
+
+/* Skills */
+.skills-container {display:flex; flex-wrap:wrap; justify-content:center; gap:20px;}
+.skill {
+    background:white; padding:15px; border-radius:10px; width:180px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1); text-align:center; transition: transform 0.3s;
+}
+.skill:hover {transform: translateY(-5px);}
+.skill-name {font-weight:bold; margin-bottom:10px;}
+.skill-bar {background:#ddd; height:20px; border-radius:25px; overflow:hidden;}
+.skill-fill {
+    height:100%; width:0%; background:#1E90FF; text-align:right; color:white;
+    line-height:20px; padding-right:5px; font-size:0.9em;
+    animation: fillSkill 2s forwards;
+}
+
+/* Projects */
+.project {background:white; padding:20px; border-radius:10px; margin-bottom:30px; box-shadow:0 0 10px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;}
+.project:hover {transform: translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.2);}
+.project h3 {margin-bottom:10px;}
+.project p {margin-bottom:15px;}
+.project .btn {margin-right:10px; transition:0.3s;}
+.project .btn:hover {background:#00BFFF; color:white; transform: translateY(-2px);}
+
+/* Contact */
+#contact p {text-align:center; margin-bottom:10px;}
+#contact a {color:#1E90FF; font-weight:bold;}
+
+/* Footer */
+footer {background:#1E90FF; color:white; text-align:center; padding:20px;}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(-20px);}
+    to {opacity:1; transform: translateY(0);}
+}
+@keyframes fillSkill {
+    from {width:0;}
+    to {width:70%;} /* default, will override inline */
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .skills-container {flex-direction:column; align-items:center;}
+  .skill {width:80%;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Dhara N</h1>
+  <p>Full Stack Developer | Building Interactive Web Applications</p>
+  <a href="#projects" class="btn">View Projects</a>
+  <a href="#contact" class="btn">Contact Me</a>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hi! I am Dhara, a passionate Full Stack Developer with experience in HTML, CSS, JavaScript, Django, and Python. I love building responsive, interactive, and professional web applications. Currently pursuing Bachelor’s degree in Computer Science and Engineering at AVC College of Engineering, with a CGPA of 7.9.</p>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <p><strong>AVC College of Engineering</strong> | Computer Science and Engineering</p>
+  <p>Current CGPA: 7.9 | Expected Graduation: 2026</p>
+</section>
+
+
+  <section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:85%">85%</div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:80%">80%</div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:75%">75%</div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Django</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:70%">70%</div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:70%">70%</div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Prompt Engineering</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:70%">70%</div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Firebase Studio</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:65%">65%</div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">LangGraph</div>
+      <div class="skill-bar">
+        <div class="skill-fill" style="width:60%">60%</div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  
+  <div class="project">
+    <h3>Online Learning Platform</h3>
+    <p>Interactive online learning platform built with Django, HTML, CSS, and JavaScript. Features: course registration, personalized dashboard, quizzes, and responsive design.</p>
+    <a href="https://intership-uwg9.onrender.com" target="_blank" class="btn">Live Demo</a>
+    <a href="https://github.com/DHARANAGARAJAN/internship.git" target="_blank" class="btn">Source Code</a>
+  </div>
+  
+  <div class="project">
+    <h3>Marine Oil Spill Detection</h3>
+    <p>Colab-based AI project detecting marine oil spills from satellite images. Built using Python and AI/ML models for environmental monitoring.</p>
+    <a href="https://colab.research.google.com/your-colab-link" target="_blank" class="btn">View Project</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:dharacse2026@gmail.com">dharacse2026@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/dharacse2026" target="_blank">github.com/dharacse2026</a></p>
+  
+</section>
+
+<footer>
+  <p>&copy; 2025 Dhara N | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
